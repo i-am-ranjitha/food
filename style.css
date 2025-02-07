@@ -1,0 +1,778 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: orangered;
+}
+
+header {
+    background: #ff6600;
+    
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background: #83471f;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.filters{
+    display: flex;
+    justify-content: center;
+    display: inline-flex;
+    display: flexbox;
+    
+
+}
+
+/* new code for full image in side the buttons */
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full-Screen Background Image */
+.hero-section {
+    height: 100vh; /* Full viewport height */
+    background: url('food2.JPEG') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute; /* or fixed, if needed */
+    top: 200px; /* Instead of margin-top */
+    right: 85px;
+     /* Position it from the right */
+    background: rgba(0, 0, 0, 0.6); /* Dark transparency */
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    width: 28%;
+    max-width: 60%;
+    height: 65%;
+     /* Prevents it from being too wide */}
+    
+  
+  
+
+/* Heading Style */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Search Bar */
+/* #search {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 15px;
+} */
+
+/* Buttons */
+button, .meal-planner-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff9800;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover, .meal-planner-btn:hover {
+    background-color: #e68a00;
+}
+
+/* Filter Buttons */
+.filters button {
+    background: rgba(127, 29, 29, 0.2);
+    border: 1px solid white;
+    color: white;
+    margin: 5px;
+}
+
+.filters button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+search{
+    justify-content: right;
+    display: flexbox;
+
+}
+
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipe {
+    background: orangered
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.recipe h3 {
+    font-size: 18px;
+}
+
+.recipe button {
+    background: rgb(220, 70, 10);
+}
+body {
+    font-family: Arial, sans-serif;
+    background: url('foodrecipe.JPEG') no-repeat center center/cover;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgb(227, 134, 12);
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #decaca;
+    flex-direction: row;
+}
+
+.planner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input, select, textarea, button {
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding-right: 20%;
+    border: none;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding:10%;
+}
+
+li {
+    background: #218838;
+    padding: 10px;
+    justify-content: center;
+    margin: 10px ;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display:flex;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.actions button {
+    margin-left: 5px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.actions .edit {
+    background-color: #dbce1d;
+    color: white;
+}
+
+.actions .delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* foodhtml css */
+/* Make the image cover the full page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background: url('food2.JPEG') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+/* Dark overlay to improve text visibility */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+}
+
+/* Ensuring content stays above the overlay */
+/* .overlay {
+    position: relative;
+    z-index: 2;
+} */
+
+/* Styling the filters */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.filters button {
+    background-color: rgba(108, 76, 118, 0.8);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.filters button:hover {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Styling the search input */
+#search {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 60%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+/* gluten */
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full-Screen Background */
+.hero-section {
+    height: 100vh;
+    background: url('food2.JPEG') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Dark Overlay */
+/* .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    width: 80%;
+    max-width: 600px;
+} */
+
+/* Buttons */
+button {
+    padding: 12px;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff9800;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
+
+/* Gluten-Free Page Styles */
+.page-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff9800;
+    color: white;
+    font-size: 24px;
+}
+
+.recipe-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.recipe-card {
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* recipe css */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Hero Section */
+.hero {
+    background: url('food2.JPEG') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.filters button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filters button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+/* new veg */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Styling */
+.page-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Back Button */
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Recipe Container */
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Recipe Card Styling */
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Recipe Images */
+.recipe-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Recipe Titles */
+.recipe-card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Recipe Descriptions */
+.recipe-card p {
+    font-size: 14px;
+    color: #269683;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recipe-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-card {
+        width: 90%;
+    }
+}
+
+/* Recipe Pages */
+.page-header {
+    text-align: right;
+    padding: 20px;
+    background-color: #ff7043;
+    color: white;
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.recipe-card h2 {
+    margin: 10px 0;
+}
+
+.recipe-card p {
+    color: white
+    text-align: right;
+}
+
+.recipe-card button {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.recipe-card button:hover {
+    background-color: #d84315;
+}
+
+/* Recipe Details */
+.recipe-detail {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-detail img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.recipe-detail h2 {
+    color: #ff7043;
+}
+
+.back-btn {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    color: white;
+    background: #ff7043;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background: #d84315;
+}
+
+/* Style for the menu list */
+.Menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Style for menu items (buttons) */
+.Menu li {
+    display:flex;
+    justify-content: center;
+}
+
+/* Style for dropdown links (buttons) */
+.Menu .dropdown-item {
+    font-size: 12px; /* Reduce font size */
+    padding: 5px 10px; /* Reduce padding */
+    background-color: transparent; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.Menu .dropdown-item:hover {
+    background-color: #E68900;
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .Menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Menu .dropdown-item {
+        font-size: 10px; /* Even smaller on small screens */
+        padding: 4px 8px;
+    }
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Hero Section */
+.hero {
+    background: url('food2.JPEG') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.filters button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filters button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Recipe Pages */
+.page-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff7043;
+    color: white;
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.recipe-card h2 {
+    margin: 10px 0;
+}
+
+.recipe-card p {
+    color: gray;
+}
+
+.recipe-card button {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.recipe-card button:hover {
+    background-color: #d84315;
+}
+
+/* Recipe Details */
+.recipe-detail {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-detail img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.recipe-detail h2 {
+    color: #ff7043;
+}
+
+.back-btn {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    color: white;
+    background: #ff7043;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background: #d84315;
+}

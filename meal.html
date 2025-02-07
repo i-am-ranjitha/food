@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Meal Planning Mastery</h1>
+        <p>Transform your weekly to-do's and turn the hassle of meal planning into a breeze.</p>
+
+        <div class="planner">
+            <label for="meal-time">Select Meal Time:</label>
+            <select id="meal-time">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+
+            <label for="meal-name">Meal Name:</label>
+            <input type="text" id="meal-name" placeholder="Enter meal name...">
+
+            <label for="servings">Serving Size:</label>
+            <input type="number" id="servings" min="1" value="1">
+
+            <label for="notes">Add Notes:</label>
+            <textarea id="notes" placeholder="Write additional notes..."></textarea>
+
+            <button onclick="addMeal()">Add Meal</button>
+            <a href="food.Html" class="back-btn">⬅ Back to Home</a>
+        </div>
+
+        <h2>Your Meal Plan is Ready !!</h2>
+        
+        <ul id="meal-list"></ul>
+
+        <!-- Back button to return to the homepage -->
+        <a href="food.Html">
+        
+        </a>
+    </div>
+
+    <script>
+        function addMeal() {
+            let mealTime = document.getElementById("meal-time").value;
+            let mealName = document.getElementById("meal-name").value;
+            let servings = document.getElementById("servings").value;
+            let notes = document.getElementById("notes").value;
+
+            if (mealName.trim() === "") {
+                alert("Please enter a meal name.");
+                return;
+            }
+
+            let mealList = document.getElementById("meal-list");
+            let listItem = document.createElement("li");
+            listItem.innerHTML = `<strong>${mealTime.toUpperCase()}</strong>: ${mealName} (Servings: ${servings}) <br> Notes: ${notes}`;
+            
+            mealList.appendChild(listItem);
+
+            // Clear input fields after adding meal
+            document.getElementById("meal-name").value = "";
+            document.getElementById("servings").value = 1;
+            document.getElementById("notes").value = "";
+        }
+    </script>
+
+</body>
+</html>
